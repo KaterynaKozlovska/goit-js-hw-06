@@ -13,17 +13,17 @@ const images = [
   },
 ];
 
-const listOfGallery = document.querySelector('#gallery');
+// const listOfGallery = document.querySelector('#gallery');
 
-const newImage = images =>
-  images.map(({ url, alt }) => {
-    return `<li class="gallery__item" ><img src="${url}" alt="${alt}" ></li>`;
-  });
+// const newImage = images =>
+//   images.map(({ url, alt }) => {
+//     return `<li class="gallery__item" ><img src="${url}" alt="${alt}" ></li>`;
+//   });
 
-const elements = newImage(images);
+// const elements = newImage(images);
 
-for (let element of elements) {
-  listOfGallery.insertAdjacentHTML('beforeend', `<li>${element}</li>`);
-}
-// const makeImage = images.map(newImage).join('');
-// listOfGallery.insertAdjacentHTML('afterbegin', makeImage);
+// for (let element of elements) {
+//   listOfGallery.insertAdjacentHTML('beforeend', `<li>${element}</li>`);
+// }
+// // const makeImage = images.map(newImage).join('');
+// // listOfGallery.insertAdjacentHTML('afterbegin', makeImage);
