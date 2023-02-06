@@ -23,9 +23,4 @@ const newImage = images =>
 
 const elements = newImage(images);
 
-for (let element of elements) {
-  console.log(element);
-  listOfGallery.insertAdjacentHTML('beforeend', `<li>${element}</li>`);
-}
-// const makeImage = images.map(newImage).join('');
-// listOfGallery.insertAdjacentHTML('afterbegin', makeImage);
+listOfGallery.insertAdjacentHTML('afterbegin', elements);
